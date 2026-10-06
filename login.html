@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Iniciar sesión · Triates Papelería POS</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="login">
+ <div class="lc">
+  <h1>Triates <mark>Papelería</mark></h1>
+  <p style="color:var(--mut);margin:6px 0 14px">Gestor de Venta (POS)</p>
+  <label for="u">Usuario</label><input id="u" autocomplete="off">
+  <label for="pw">Contraseña</label><input id="pw" type="password">
+  <p id="err" style="color:var(--bad);min-height:20px;margin:8px 0 0"></p>
+  <button class="btn p" style="width:100%" onclick="A.login()">Iniciar sesión</button>
+  <label>Acceso rápido para la demostración</label>
+  <div class="chips"><button class="chip" onclick="A.fill('propietario')">Propietario</button><button class="chip" onclick="A.fill('mostrador')">Encargado de mostrador</button></div>
+ </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
